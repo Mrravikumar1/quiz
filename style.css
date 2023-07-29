@@ -1,28 +1,32 @@
-*{
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-   font-size: 25px;
-   text-decoration: none;
-   list-style: none;
-
+:root{
+    --box-shadow: rgba(0,0 ,0, 0.24) 0px 3px 8px;
 }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+}
+
 .quiz{
-    background-color: cadetblue;
+    background-color: #0d479a;
     padding: 30px;
 }
 .heading{
     margin: 10px auto 40px auto;
 }
+
 .title{
     font-size: 30px;
-    color: burlywood;
+    color: #ffffff;
     font-weight: 500;
     text-align: center;
 }
 .subtitle{
     font-size: 20px;
-    color: burlywood ;
+    color: #ffffff;
     font-weight: 300;
     text-align: center;
 }
@@ -32,17 +36,16 @@
     max-width: 400px;
     margin: 20px auto;
     font-size: 20px;
-    border-radius: 7px;
-    background-color: aqua;
-    box-shadow: egba(0,0,0,0.24) 0px 3px 8px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    /* box-shadow: rgba(0,0 ,0, 0.24) 0px 3px 8px; */
     box-shadow: var(--box-shadow);
 }
-.hide{
-    display: none;
-}
+
 .result p:first-child{
     padding: 10px 20px;
 }
+
 .reload button{
     background-color: #04aa6D;
     color: #ffffff;
@@ -51,35 +54,57 @@
     width: 100%;
     border: 0px;
 }
+
 .reload button:hover{
-     background-color:#03a369 ;
-     cursor: pointer;
+    background-color: #03a369;
+    cursor: pointer;
 }
+
 .question{
-    max-width: 70%;
-    margin: 20px auto;
-    background-color: bisque;
-    border-radius: 10px;
-    padding: 5px;
-    
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
 }
+
+.quiz-form{
+    max-width: 800px;
+    margin: auto;
+}
+
+.question > *{
+    font-size: 18px;
+}
+
 .option{
     margin-left: 15px;
 }
+
 .submit input{
-    max-width: 50%;
-    height: 50px;
-    margin: 20px auto;
-    border-radius: 10px;
-    background-color: coral;
-    padding: 5px 20px;
+    background-color: #04AA4D;
+    padding: 5px 25px;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    border: 0px;
+}
+.submit input:hover{
+    background-color: #03a369;
+    cursor: pointer;
+}
+.hide{
+    display: none;
 }
 .submit{
     text-align: center;
 }
+
 .correct{
-    background-color:darkseagreen;
+    background-color: #c8ffdf;
 }
+
 .wrong{
-    background-color:dimgray;
+    background-color: #ffd1d1;
 }
